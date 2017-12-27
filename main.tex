@@ -1,4 +1,4 @@
-\section{Mapzen}
+\section{Mapzen & QGIS}
 Mapzen Merupakan laboratorium pemetaan open source dibawah Samsung Accelatoryang membangun dan mendukung data dan software terbuka untuk mempromosikan ekosistem pemetaan yang sehat. Tim Pengembangan dari Mapzen merupakan salah satu divisi dari SRA (Samsung Research Amerika) yang berfokus pada komponen inti dari platform geo, termasuk pencarian, rendering, navigasi, dan data.
 
 Aplikasi Mapzen memakai data dan software lisensi dari OpenStreetMap. Jadi apabila Anda memakai aplikasi Mapzen harus mempunyai account di OpenStreetMap. Aplikasi Mapzen dibangun berdasarkan project open source OpenScienceMap, Pelias, Open Source Routing Machine (OSRM, dan SDK open source dari Mapzen, dapat mengakses hardware GPS di perangkat mobile untuk fitur navigasi dan peta pada saat berjalan, mengendarai mobil maupun bersepeda.
@@ -11,9 +11,15 @@ Beberapa fitur  dari Mapzen yaitu:
 \item Metro Extracts, porsi berukuran kota dari database OpenStreetMap, yang disajikan secara mingguan.
 \item Pelias, modular open source geocoder menggunakan ElasticSearch sebagai fast autocomplete dan forward & reverse geocoding.
 
-\section{Sejarah Mapzen}
+\subsection{Sejarah Mapzen}
 Pada akhir 2007, Simon Willison meluncurkan beberapa situs web yang paling berguna di internet. Situs web itu disebut Get Lat Lon dan keseluruhan tujuannya adalah untuk memungkinkan pengunjung menemukan garis lintang dan bujur sebuah titik di peta.
 Situs web ini dibangun menggunakan Google Maps API dan memiliki formulir untuk alamat geocoding atau nama tempat namun antarmuka utama adalah peta sederhana dengan satu set garis bidik yang berpusat di area pandang. Lat Lat hanya akan mencetak koordinat geografis dari lokasi mana pun yang berada di bawah garis bidik. Cemerlang!
+
+\subsection{Menu Pada QGIS}
+source type ini berupa pilihan :
+File | Directory | Database | Protocol
+Protocol yang disupport adalah URI (Uniform Resources Identifier) untuk GeoJSON, GeoJSON sendiri merupakan enkoding open format data geografis bertipe JavaScript Open Notation.
+Database yang disupport antara lain ESRI Personal Geodatabase, ODBC, Postgre, dan MySQL, artinya anda bahkan bisa buka Geodatabase ESRI walaupun kemungkinan ada beberapa format data khusus yang hilang, tetapi spatial-nya akan tetap dapat terbaca.
 
 \subsection{Tambahkan shapefile OSM2PGSQL ke QGIS}
 Cara menambahkan shapfile OSM2PGSQL ke QGIS:
